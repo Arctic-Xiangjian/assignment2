@@ -304,10 +304,10 @@ For the LoG edge dectection we try 5 $\sigma =[0.5,1.0,1.5,2.0,2.5]$, which show
   \end{figure}
 
 \section{Blob Dectection}\label{sec: allblob}
-We fix 
+We fix the $number\_of\_scale=15$ and $k=1.24$(increasing factor). By changing the other two Hyper-parameters $Threshold=[0.001,0.005,0.01,0.02,0.03,0.04,0.05,0.06,0.07,0.08,0.09,0.1,0.15]$ and $s=[0.5,1,2,3,4,5]/\sqrt{2.5}$
 
 \subsection{Butterfly}
-The \href{https://github.com/Arctic-Xiangjian/assignment2/tree/main/unnormalized}{unnormalized result}, Fig. \ref{fig: unnormalizedbut} is some sample images. The $s$ is the initial value of $\sigma$.
+\href{https://github.com/Arctic-Xiangjian/assignment2/tree/main/unnormalized}{Here we can see all unnormalized result} of butterfly, Fig. \ref{fig: unnormalizedbut} is some sample images. The $s$ is the initial value of $\sigma$.
 \begin{figure}[htbp]
   \centering
   \subfigure[]{
@@ -325,11 +325,110 @@ The \href{https://github.com/Arctic-Xiangjian/assignment2/tree/main/unnormalized
   \subfigure[]{
   \includegraphics[width=0.2\textwidth]{unnormalized/sunflower_unnormalized_squared_t=0.01_s=1.png}
   }
-  \caption{(a) $H=40$ many fake edges, (b) $H=55$ best result, (c) $H=75$ missing many edges}
+  \caption{(a) $threshold=0.001, s=1/\sqrt{2.5}$, (b) $threshold=0.001, s=2/\sqrt{2.5}$, (c) $threshold=0.001, s=4/\sqrt{2.5}$, (d) $threshold=0.01, s=1/\sqrt{2.5}$}
   \label{fig: unnormalizedbut}
   \end{figure}
 
+  \href{https://github.com/Arctic-Xiangjian/assignment2/tree/main/normalized}{Here we can see all normalized result} of butterfly, Fig. \ref{fig: normalizedbut} is some sample images.
+  \begin{figure}[htbp]
+    \centering
+    \subfigure[]{
+    \includegraphics[width=0.2\textwidth]{normalized/butterfly_normalized_squared_t=0.02_s=1.png}
+    }
+    \quad
+    \subfigure[]{
+    \includegraphics[width=0.2\textwidth]{normalized/butterfly_normalized_squared_t=0.02_s=3.png}
+    }
+    \quad
+    \subfigure[]{
+    \includegraphics[width=0.2\textwidth]{normalized/butterfly_normalized_squared_t=0.02_s=5.png}
+    }
+    \quad
+    \subfigure[]{
+    \includegraphics[width=0.2\textwidth]{normalized/butterfly_normalized_squared_t=0.15_s=3.png}
+    }
+    \quad
+    \subfigure[]{
+    \includegraphics[width=0.2\textwidth]{normalized/butterfly_normalized_squared_t=0.001_s=1.png}
+    }
+    \quad
+    \subfigure[]{
+    \includegraphics[width=0.2\textwidth]{normalized/butterfly_normalized_squared_t=0.001_s=2.png}
+    }
+    \quad
+    \subfigure[]{
+    \includegraphics[width=0.2\textwidth]{normalized/butterfly_normalized_squared_t=0.001_s=4.png}
+    }
+    \quad
+    \subfigure[]{
+    \includegraphics[width=0.2\textwidth]{normalized/butterfly_normalized_squared_t=0.01_s=1.png}
+ }
+    \caption{We think the (d) is the best result. (a) $threshold=0.02, s=1/\sqrt{2.5}$, (b) $threshold=0.02, s=3/\sqrt{2.5}$, (c) $threshold=0.02, s=5/\sqrt{2.5}$, (d) $threshold=0.15, s=3/\sqrt{2.5}$, (e)-(h) are same setting with Fig. \ref{fig: unnormalizedbut} to compare}
+    \label{fig: normalizedbut}
+    \end{figure}
+\subsection{Sunflower}
+\href{https://github.com/Arctic-Xiangjian/assignment2/tree/main/unnormalized2}{Here we can see all unnormalized result} of butterfly, Fig. \ref{fig: unnormalizedsun} is some sample images. The $s$ is the initial value of $\sigma$.
+\begin{figure}[htbp]
+  \centering
+  \subfigure[]{
+  \includegraphics[width=0.2\textwidth]{unnormalized2/sunflower_unnormalized_squared_t=0.001_s=1.png}
+  }
+  \quad
+  \subfigure[]{
+  \includegraphics[width=0.2\textwidth]{unnormalized2/sunflower_unnormalized_squared_t=0.001_s=2.png}
+  }
+  \quad
+  \subfigure[]{
+  \includegraphics[width=0.2\textwidth]{unnormalized2/sunflower_unnormalized_squared_t=0.001_s=4.png}
+  }
+  \quad
+  \subfigure[]{
+  \includegraphics[width=0.2\textwidth]{unnormalized2/sunflower_unnormalized_squared_t=0.01_s=1.png}
+  }
+  \caption{(a) $threshold=0.001, s=1/\sqrt{2.5}$, (b) $threshold=0.001, s=2/\sqrt{2.5}$, (c) $threshold=0.001, s=4/\sqrt{2.5}$, (d) $threshold=0.01, s=1/\sqrt{2.5}$}
+  \label{fig: unnormalizedsun}
+  \end{figure}
 
+  \href{https://github.com/Arctic-Xiangjian/assignment2/tree/main/normalized2}{Here we can see all normalized result} of sunflower, Fig. \ref{fig: normalizedsun} is some sample images. 
+  
+  There is the trad-off when we choose the best result, if we consider Fig. \ref{fig: normalizedsun} (b) as the best result, which will include almost all flower hearts but we have to bear more noise. If we consider Fig. \ref{fig: normalizedsun} (d) as the best result, which has less noise but some of the flower hearts is missed.
+  
+  \begin{figure}[htbp]
+    \centering
+    \subfigure[]{
+    \includegraphics[width=0.2\textwidth]{normalized2/butterfly_normalized_squared_t=0.04_s=0.5.png}
+    }
+    \quad
+    \subfigure[]{
+    \includegraphics[width=0.2\textwidth]{normalized2/butterfly_normalized_squared_t=0.04_s=2.png}
+    }
+    \quad
+    \subfigure[]{
+    \includegraphics[width=0.2\textwidth]{normalized2/butterfly_normalized_squared_t=0.04_s=4.png}
+    }
+    \quad
+    \subfigure[]{
+    \includegraphics[width=0.2\textwidth]{normalized2/butterfly_normalized_squared_t=0.05_s=2.png}
+    }
+    \quad
+    \subfigure[]{
+    \includegraphics[width=0.2\textwidth]{normalized2/butterfly_normalized_squared_t=0.001_s=1.png}
+    }
+    \quad
+    \subfigure[]{
+    \includegraphics[width=0.2\textwidth]{normalized2/butterfly_normalized_squared_t=0.001_s=2.png}
+    }
+    \quad
+    \subfigure[]{
+    \includegraphics[width=0.2\textwidth]{normalized2/butterfly_normalized_squared_t=0.001_s=4.png}
+    }
+    \quad
+    \subfigure[]{
+    \includegraphics[width=0.2\textwidth]{normalized2/butterfly_normalized_squared_t=0.01_s=1.png}
+ }
+    \caption{(a) $threshold=0.04, s=1/\sqrt{2.5}$, (b) $threshold=0.04, s=3/\sqrt{2.5}$, (c) $threshold=0.04, s=5/\sqrt{2.5}$, (d) $threshold=0.05, s=2/\sqrt{2.5}$, (e)-(h) are same setting with Fig. \ref{fig: unnormalizedbut} to compare}
+    \label{fig: normalizedsun}
+    \end{figure}
 
 \end{appendices}
 

@@ -2,25 +2,25 @@
 
 ## Canny Edge Dectection
 
-See in the '''findbestcanny/'''
+See in the ```findbestcanny/```
 
 ## LoG Edge Dectection
-See in the '''findbestsigmma/'''
+See in the ```findbestsigmma/```
 
 ## Blob Dectection
 
 ### Butterfly
 
 #### Normalized
-See in the '''normalized/'''
+See in the ```normalized/```
 
 #### Unnormalized
-See in the '''unnormalized/'''
+See in the ```unnormalized/```
 
 ### Surflower
 
 #### Normalized
-See in the '''normalized2/'''
+See in the ```normalized2/```
 
 #### Unnormalized
-See in the '''unnormalized2/'''
+See in the ```unnormalized2/```

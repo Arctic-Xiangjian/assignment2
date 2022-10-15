@@ -155,7 +155,7 @@ The Fig. \ref{fig:canny} shows our result and progress of canny edge detection. 
 }
 \quad
 \subfigure[]{
-\includegraphics[width=0.4\linewidth]{10.png}
+\includegraphics[width=0.4\linewidth]{findbestcanny/Canny_L_H_20_55.png}
 }
 \caption{(a) original figure, (b) the Canny Edge Detection}
 \label{fig:canny}
@@ -182,7 +182,7 @@ By observing Fig. \ref{fig:canny} and Fig. \ref{fig: log} and analyzing the prin
 \end{enumerate}
 
 \subsection{Blob Detection}
-Depending on the normalized or without normalized, and different threshold values. We have the Fig. \ref{fig:partblob}, which we only show the best results (See the appendix \ref{sec: allblob} for a full comparison of parameters)
+Depending on the normalized or without normalized, and different threshold values. We have the Fig. \ref{fig:partblob}, which we only show the best results (See the appendix \ref{sec: allblob} for a comparison of parameters)
 
 \begin{figure}[h]
 \centering
@@ -218,7 +218,7 @@ Combine with appendix \ref{sec: allblob}, we know that to ensure that the amplit
 
 \subsection{Canny Edge Detection}
 
-The fig. \ref{fig:cannyall} shows the process of Canny edge detection. We adjust the Low values $[5,10,15,20,25,30,35,40]$ and $High-Low=[20,25,30,35,40,45,50,55]$ which can see the sample images in fig. (For all images See the \href{https://github.com/Arctic-Xiangjian/assignment2/tree/main/findbestcanny}{Github Repo})
+The fig. \ref{fig:cannyall} shows the process of Canny edge detection. We adjust the Low values $[5,10,15,20,25,30,35,40]$ and $High-Low=[20,25,30,35,40,45,50,55]$ which can see the sample images in fig. \ref{fig: Cannycompare} (For all images See the \href{https://github.com/Arctic-Xiangjian/assignment2/tree/main/findbestcanny}{Github Repo})
 \begin{figure}[h]
   \centering
   \subfigure[]{
@@ -261,81 +261,23 @@ The fig. \ref{fig:cannyall} shows the process of Canny edge detection. We adjust
   \begin{figure}[hbp]
     \centering
     \subfigure[]{
-    \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_5_25.png}
+    \includegraphics[width=0.3\textwidth]{findbestcanny/Canny_L_H_20_40.png}
     }
     \quad
     \subfigure[]{
-    \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_5_30.png}
+    \includegraphics[width=0.3\textwidth]{findbestcanny/Canny_L_H_20_55.png}
     }
     \quad
     \subfigure[]{
-    \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_5_35.png}
+    \includegraphics[width=0.3\textwidth]{findbestcanny/Canny_L_H_20_75.png}
     }
-    \quad
-    \subfigure[]{
-    \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_5_40.png}
-    }
-    \quad
-    \subfigure[]{
-    \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_5_45.png}
-    }
-    \quad
-    \subfigure[]{
-    \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_5_50.png}
-    }
-    \quad
-    \subfigure[]{
-    \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_5_55.png}
-    }
-    \quad
-    \subfigure[]{
-    \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_5_60.png}
-    }
-    \caption{This is the $Low=5$}
-    \label{fig: Low5}
+    \caption{This shows the $Low=20$ (a) $H=40$ too much fake edge, (b) $H=55$ best result, (c) $H=$}
+    \label{fig: Cannycompare}
     \end{figure}
 
-    \begin{figure}[htbp]
-      \centering
-      \subfigure[]{
-      \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_10_30.png}
-      }
-      \quad
-      \subfigure[]{
-      \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_10_35.png}
-      }
-      \quad
-      \subfigure[]{
-      \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_10_40.png}
-      }
-      \quad
-      \subfigure[]{
-      \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_10_45.png}
-      }
-      \quad
-      \subfigure[]{
-      \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_10_50.png}
-      }
-      \quad
-      \subfigure[]{
-      \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_10_55.png}
-      }
-      \quad
-      \subfigure[]{
-      \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_10_60.png}
-      }
-      \quad
-      \subfigure[]{
-      \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_10_65.png}
-      }
-      \caption{This is the $Low=10$}
-      \label{fig: Low10}
-      \end{figure}
-\section{Blob Detection}\label{sec: allblob}
 
-
-
-\section{Butterfly}
+\section{Blob Dectection}\label{sec: allblob}
+\subsection{Butterfly}
 
 
 

@@ -160,7 +160,7 @@ The Fig. \ref{fig:canny} shows our result and progress of canny edge detection. 
 \caption{(a) original figure, (b) the Canny Edge Detection}
 \label{fig:canny}
 \end{figure}
-The LoG edge detection's result is shown at Fig \ref{fig: log}
+The LoG edge detection's result is shown at Fig \ref{fig: log}.(See all in \ref{sec: logresult})
 
 
 \begin{figure}[htbp]
@@ -218,7 +218,7 @@ Combine with appendix \ref{sec: allblob}, we know that to ensure that the amplit
 
 \subsection{Canny Edge Detection}
 
-The fig. \ref{fig:cannyall} shows the process of Canny edge detection. We adjust the Low values $[5,10,15,20,25,30,35,40]$ and $High-Low=[20,25,30,35,40,45,50,55]$ which can see the sample images in fig. \ref{fig: Cannycompare} (For all images See the \href{https://github.com/Arctic-Xiangjian/assignment2/tree/main/findbestcanny}{Github Repo})
+The Fig. \ref{fig:cannyall} shows the process of Canny edge detection. We adjust the Low values $[5,10,15,20,25,30,35,40]$ and $High-Low=[20,25,30,35,40,45,50,55]$ which can see the sample images in Fig. \ref{fig: Cannycompare} (For all images See the \href{https://github.com/Arctic-Xiangjian/assignment2/tree/main/findbestcanny}{Github Repo})
 \begin{figure}[h]
   \centering
   \subfigure[]{
@@ -258,7 +258,7 @@ The fig. \ref{fig:cannyall} shows the process of Canny edge detection. We adjust
   
   
 
-  \begin{figure}[hbp]
+  \begin{figure}[htbp]
     \centering
     \subfigure[]{
     \includegraphics[width=0.3\textwidth]{findbestcanny/Canny_L_H_20_40.png}
@@ -271,15 +271,63 @@ The fig. \ref{fig:cannyall} shows the process of Canny edge detection. We adjust
     \subfigure[]{
     \includegraphics[width=0.3\textwidth]{findbestcanny/Canny_L_H_20_75.png}
     }
-    \caption{This shows the $Low=20$ (a) $H=40$ too much fake edge, (b) $H=55$ best result, (c) $H=$}
+    \caption{This shows the $Low=20$ (a) $H=40$ many fake edges, (b) $H=55$ best result, (c) $H=75$ missing many edges}
     \label{fig: Cannycompare}
     \end{figure}
 
+\subsection{LoG Edge Dectection}\label{sec: logresult}
+For the LoG edge dectection we try 5 $\sigma =[0.5,1.0,1.5,2.0,2.5]$, which shows in Fig. \ref{fig: logsig}.
+
+\begin{figure}[htbp]
+  \centering
+  \subfigure[]{
+  \includegraphics[width=0.3\textwidth]{findbestsigma/sigma_0.5.png}
+  }
+  \quad
+  \subfigure[]{
+  \includegraphics[width=0.3\textwidth]{findbestsigma/sigma_1.png}
+  }
+  \quad
+  \subfigure[]{
+  \includegraphics[width=0.3\textwidth]{findbestsigma/sigma_1.5.png}
+  }
+  \quad
+  \subfigure[]{
+  \includegraphics[width=0.4\textwidth]{findbestsigma/sigma_2.png}
+  }
+  \quad
+  \subfigure[]{
+  \includegraphics[width=0.4\textwidth]{findbestsigma/sigma_2.5.png}
+  }
+  \caption{(a) $\sigma=0.5$, (b) $\sigma=1.0$ , (c) $\sigma=1.5$, (d) $\sigma=2.0$, (e) $\sigma=2.5$}
+  \label{fig: logsig}
+  \end{figure}
 
 \section{Blob Dectection}\label{sec: allblob}
+We fix 
+
 \subsection{Butterfly}
-
-
+The \href{https://github.com/Arctic-Xiangjian/assignment2/tree/main/unnormalized}{unnormalized result}, Fig. \ref{fig: unnormalizedbut} is some sample images. The $s$ is the initial value of $\sigma$.
+\begin{figure}[htbp]
+  \centering
+  \subfigure[]{
+  \includegraphics[width=0.2\textwidth]{unnormalized/sunflower_unnormalized_squared_t=0.001_s=1.png}
+  }
+  \quad
+  \subfigure[]{
+  \includegraphics[width=0.2\textwidth]{unnormalized/sunflower_unnormalized_squared_t=0.001_s=2.png}
+  }
+  \quad
+  \subfigure[]{
+  \includegraphics[width=0.2\textwidth]{unnormalized/sunflower_unnormalized_squared_t=0.001_s=4.png}
+  }
+  \quad
+  \subfigure[]{
+  \includegraphics[width=0.2\textwidth]{unnormalized/sunflower_unnormalized_squared_t=0.01_s=1.png}
+  }
+  \caption{(a) $H=40$ many fake edges, (b) $H=55$ best result, (c) $H=75$ missing many edges}
+  \label{fig: unnormalizedbut}
+  \end{figure}
 
 
 

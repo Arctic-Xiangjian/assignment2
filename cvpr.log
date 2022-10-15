@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.8.1)  15 OCT 2022 18:02
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.8.1)  15 OCT 2022 18:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -503,17 +503,66 @@ File: sunflower_unnormalized_squared_t=0.15_s=5.png Graphic file (type bmp)
 <sunflower_unnormalized_squared_t=0.15_s=5.png>
 File: 图片2.png Graphic file (type bmp)
 <图片2.png>
- [2] [3
+ [2]
+File: 3.png Graphic file (type bmp)
+<3.png>
+File: 4.png Graphic file (type bmp)
+<4.png>
+File: 5.png Graphic file (type bmp)
+<5.png>
+File: 6.png Graphic file (type bmp)
+<6.png>
+File: 7.png Graphic file (type bmp)
+<7.png>
+File: 8.png Graphic file (type bmp)
+<8.png>
+File: 9.png Graphic file (type bmp)
+<9.png>
+File: 10.png Graphic file (type bmp)
+<10.png>
+File: findbestcanny/Canny_L_H_5_25.png Graphic file (type bmp)
+<findbestcanny/Canny_L_H_5_25.png>
+File: findbestcanny/Canny_L_H_5_30.png Graphic file (type bmp)
+<findbestcanny/Canny_L_H_5_30.png>
+File: findbestcanny/Canny_L_H_5_35.png Graphic file (type bmp)
+<findbestcanny/Canny_L_H_5_35.png>
+File: findbestcanny/Canny_L_H_5_40.png Graphic file (type bmp)
+<findbestcanny/Canny_L_H_5_40.png>
+File: findbestcanny/Canny_L_H_5_45.png Graphic file (type bmp)
+<findbestcanny/Canny_L_H_5_45.png>
+File: findbestcanny/Canny_L_H_5_50.png Graphic file (type bmp)
+<findbestcanny/Canny_L_H_5_50.png>
+File: findbestcanny/Canny_L_H_5_55.png Graphic file (type bmp)
+<findbestcanny/Canny_L_H_5_55.png>
+File: findbestcanny/Canny_L_H_5_60.png Graphic file (type bmp)
+<findbestcanny/Canny_L_H_5_60.png>
+File: findbestcanny/Canny_L_H_10_30.png Graphic file (type bmp)
+<findbestcanny/Canny_L_H_10_30.png>
+File: findbestcanny/Canny_L_H_10_35.png Graphic file (type bmp)
+<findbestcanny/Canny_L_H_10_35.png>
+File: findbestcanny/Canny_L_H_10_40.png Graphic file (type bmp)
+<findbestcanny/Canny_L_H_10_40.png>
+File: findbestcanny/Canny_L_H_10_45.png Graphic file (type bmp)
+<findbestcanny/Canny_L_H_10_45.png>
+File: findbestcanny/Canny_L_H_10_50.png Graphic file (type bmp)
+<findbestcanny/Canny_L_H_10_50.png>
+File: findbestcanny/Canny_L_H_10_55.png Graphic file (type bmp)
+<findbestcanny/Canny_L_H_10_55.png>
+File: findbestcanny/Canny_L_H_10_60.png Graphic file (type bmp)
+<findbestcanny/Canny_L_H_10_60.png>
+File: findbestcanny/Canny_L_H_10_65.png Graphic file (type bmp)
+<findbestcanny/Canny_L_H_10_65.png>
+ [3
 
 
-] (./cvpr.aux) ) 
+] [4] (./cvpr.aux) ) 
 Here is how much of TeX's memory you used:
- 12824 strings out of 475865
- 213356 string characters out of 5802057
+ 13008 strings out of 475865
+ 218423 string characters out of 5802057
  549723 words of memory out of 5000000
- 33697 multiletter control sequences out of 15000+600000
+ 33858 multiletter control sequences out of 15000+600000
  489768 words of font info for 84 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  87i,9n,90p,377b,399s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on cvpr.pdf (3 pages).
+Output written on cvpr.pdf (4 pages).

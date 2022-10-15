@@ -214,10 +214,119 @@ Combine with appendix \ref{sec: allblob}, we know that to ensure that the amplit
 
 \section{Edge Detection}\label{sec: allcanny}
 \subsection{Canny Edge Detection}
-We adjust the Low values $[5,10,15,20,25,30,35,40]$ and $High-Low=[20,25,30,35,40,45,50,55]$.
+The fig. \ref{fig:cannyall} shows the process of Canny edge detection. We adjust the Low values $[5,10,15,20,25,30,35,40]$ and $High-Low=[20,25,30,35,40,45,50,55]$ which can see in fig. 
+\begin{figure}[h]
+  \centering
+  \subfigure[]{
+  \includegraphics[width=0.2\textwidth]{3.png}
+  }
+  \quad
+  \subfigure[]{
+  \includegraphics[width=0.2\textwidth]{4.png}
+  }
+  \quad
+  \subfigure[]{
+  \includegraphics[width=0.2\textwidth]{5.png}
+  }
+  \quad
+  \subfigure[]{
+  \includegraphics[width=0.2\textwidth]{6.png}
+  }
+  \quad
+  \subfigure[]{
+  \includegraphics[width=0.2\textwidth]{7.png}
+  }
+  \quad
+  \subfigure[]{
+  \includegraphics[width=0.2\textwidth]{8.png}
+  }
+  \quad
+  \subfigure[]{
+  \includegraphics[width=0.2\textwidth]{9.png}
+  }
+  \quad
+  \subfigure[]{
+  \includegraphics[width=0.2\textwidth]{10.png}
+  }
+  \caption{(a) original figure, (b) Smoothing, (c) sobel\_x, (d) filter, (e) magnitude of gradients, (f) non-max-suppression, (g) thresholding, (h) hysteresis thresholding}
+  \label{fig:cannyall}
+  \end{figure}
+  
+  
 
+  \begin{figure}[hbp]
+    \centering
+    \subfigure[]{
+    \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_5_25.png}
+    }
+    \quad
+    \subfigure[]{
+    \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_5_30.png}
+    }
+    \quad
+    \subfigure[]{
+    \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_5_35.png}
+    }
+    \quad
+    \subfigure[]{
+    \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_5_40.png}
+    }
+    \quad
+    \subfigure[]{
+    \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_5_45.png}
+    }
+    \quad
+    \subfigure[]{
+    \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_5_50.png}
+    }
+    \quad
+    \subfigure[]{
+    \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_5_55.png}
+    }
+    \quad
+    \subfigure[]{
+    \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_5_60.png}
+    }
+    \caption{This is the $Low=5$}
+    \label{fig: Low5}
+    \end{figure}
 
-
+    \begin{figure}[htbp]
+      \centering
+      \subfigure[]{
+      \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_10_30.png}
+      }
+      \quad
+      \subfigure[]{
+      \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_10_35.png}
+      }
+      \quad
+      \subfigure[]{
+      \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_10_40.png}
+      }
+      \quad
+      \subfigure[]{
+      \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_10_45.png}
+      }
+      \quad
+      \subfigure[]{
+      \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_10_50.png}
+      }
+      \quad
+      \subfigure[]{
+      \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_10_55.png}
+      }
+      \quad
+      \subfigure[]{
+      \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_10_60.png}
+      }
+      \quad
+      \subfigure[]{
+      \includegraphics[width=0.2\textwidth]{findbestcanny/Canny_L_H_10_65.png}
+      }
+      \caption{This is the $Low=10$}
+      \label{fig: Low10}
+      \end{figure}
 \section{Blob Detection}\label{sec: allblob}
 
 
